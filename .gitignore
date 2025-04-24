@@ -3,12 +3,12 @@ node_modules/
 
 # 报告目录
 reports/
-*.html
-*.json
+reports/*.html
+reports/*.json
 
 # 截图目录
 screenshots/
-*.png
+screenshots/*.png
 
 # 日志文件
 *.log
@@ -41,5 +41,5 @@ Desktop.ini
 tmp/
 temp/
 
-# package-lock（可选，取决于团队是否需要锁定版本）
-# package-lock.json 
+# package-lock（选择不推送到远程仓库）
+package-lock.json 

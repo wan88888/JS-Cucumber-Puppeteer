@@ -1,0 +1,28 @@
+{
+  "name": "web-automation-framework",
+  "version": "1.0.0",
+  "description": "Web automation testing framework using JavaScript, Cucumber, and Puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:headless": "HEADLESS=true cucumber-js",
+    "test:login": "cucumber-js features/login.feature",
+    "test:report": "cucumber-js --format html:reports/cucumber-report.html --format json:reports/cucumber-report.json",
+    "clean": "rimraf reports/*.html reports/*.json screenshots/*.png",
+    "pretest": "npm run clean"
+  },
+  "keywords": [
+    "cucumber",
+    "puppeteer",
+    "automation",
+    "testing"
+  ],
+  "dependencies": {
+    "@cucumber/cucumber": "^8.7.0",
+    "chai": "^4.3.7",
+    "puppeteer": "^19.7.0"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.10"
+  }
+}
